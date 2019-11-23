@@ -28,6 +28,8 @@ class App extends React.Component {
                         ...snapShot.data(),
                     });
                 });
+            } else {
+                setCurrentUser(null);
             }
 
             this.setState({ currentUser: userAuth });
